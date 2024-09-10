@@ -1,0 +1,20 @@
+header{
+  position: absolute;
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+
+  ul{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
+.headerInner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

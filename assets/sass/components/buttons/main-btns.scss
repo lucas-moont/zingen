@@ -1,0 +1,28 @@
+.primaryBtn{
+  background: $cancel-gradient;
+  color: $black;
+  transition: background 0.5s;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+
+  &::before{
+    content: attr(data-text);
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: $brand-gradient;
+    opacity: -1;
+  }
+
+  &:hover{
+    &::before{
+      opacity: 1;
+    }
+  }
+}

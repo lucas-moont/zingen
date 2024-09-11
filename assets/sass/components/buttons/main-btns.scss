@@ -1,4 +1,4 @@
-.primaryBtn{
+.primaryBtn {
   background: $cancel-gradient;
   color: $black;
   transition: background 0.5s;
@@ -6,7 +6,7 @@
   overflow: hidden;
   font-weight: 500;
 
-  &::before{
+  &::before {
     content: attr(data-text);
     transition: 0.5s;
     position: absolute;
@@ -20,9 +20,65 @@
     opacity: -1;
   }
 
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.secondaryBtnBeforeParent {
+  position: relative;
+  display: inline-flex;
+
   &:hover{
     &::before{
       opacity: 1;
+    }
+  }
+
+  &::before {
+    content: "aaaaa";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 8px;
+    z-index: 0;
+    background-image: $brand-gradient;
+    display: flex;
+    justify-content: center;
+    transform: translateZ(-1px);
+    opacity: 0;
+  }
+}
+
+.secondaryBtn {
+  color: $text-color-primary;
+  transition-duration: 0.5s;
+  position: relative;
+  border: 1px solid $text-color-primary;
+  isolation: isolate;
+  z-index: 2;
+
+  &::after{
+    background: $brand-gradient;
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: $text-color-primary; 
+    transition-duration: 0.5s;
+    content: attr(data-text);
+    color: $text-color-primary;
+    position: absolute;
+  }
+
+  &:hover{
+    color: transparent;
+    border-color: transparent;
+
+    &::after{
+      color: transparent;
     }
   }
 }

@@ -1,8 +1,11 @@
 #primarySection{
-  padding: 174px 32px 96px;
+  padding: 174px 32px 264px;
   text-align: center;
   min-height: 100vh;
   align-items: center;
+  position: relative;
+  background: url('../images/hero_bg.png') no-repeat center bottom;
+  background-size: 100% auto;
 
   h1{
     font-size: 6.4rem;
@@ -16,5 +19,12 @@
 
   .secondaryBtn{
     background-color: $black;
+  }
+
+  .shiningSurface{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
   }
 }

@@ -2,11 +2,17 @@
 @import './utils/global.scss';
 @import './utils/flex.scss';
 @import './utils/gaps.scss';
+@import './utils/alignments.scss';
+
 
 @import './texts/text-color-primary.scss';
 @import './texts/text-color-secondary.scss';
 
 @import './sections/primary.scss';
+@import './sections/about.scss';
 @import './components/header.scss';
 @import './components/buttons/main-btns.scss';
 @import './components/buttons/sizes.scss';
+@import './components/pretitle.scss';
+@import './components/headings.scss';
+@import './components/columns.scss'

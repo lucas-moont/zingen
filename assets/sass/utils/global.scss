@@ -29,6 +29,11 @@ a{
   max-width: 1200px;
 }
 
+.sm-container{
+  max-width: 800px;
+  width: 100%;
+}
+
 .roundedBtn{
   border-radius: $border-radius;
 }
@@ -36,6 +41,7 @@ a{
 section{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 img{
@@ -44,4 +50,9 @@ img{
 
 p{
   margin: 0;
+}
+
+.fullWidthElement{
+  width: 100%;
+  display: block;
 }

@@ -1,0 +1,38 @@
+#pricing{
+  .sm-container{
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .planName{
+    margin-bottom: 4px;
+  }
+
+  .flex{
+    .col{
+      background-color: $surface-color;
+      border: 1px solid $stroke-color;
+      padding: 32px;
+      border-radius: 24px;
+      width: 33.3%;
+    }
+
+    .mainParagraph{
+      margin-bottom: 32px;
+    }
+
+    .highlightedText{
+      font-size: 4.0rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .secondaryBtn{
+      background-color: $surface-color;
+    }
+
+    .hr{
+      margin: 32px 0;
+    }
+  }
+}

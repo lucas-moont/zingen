@@ -1,0 +1,27 @@
+#download{
+  padding: 164px 32px;
+
+  h2{
+    font-size: 4.8rem;
+    margin-bottom: 0px;
+  }
+
+  p{
+    margin-bottom: 16px;
+  }
+
+  .downloadSectionInner{
+    background-color: $surface-color;
+    padding: 164px calc(64px + 430px) 164px 64px;
+    border-radius: 2.4rem;
+    position: relative;
+
+    .floatingImg{
+      position: absolute;
+      width: 50%;
+      right: -32px;
+      bottom: 0px;
+      width: 466px;
+    }
+  }
+}

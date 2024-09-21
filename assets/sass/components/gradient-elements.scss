@@ -1,0 +1,18 @@
+.linear-gradient-border {
+  position: relative;
+
+  &::before {
+    content: "";
+    height: calc(100% + 3px);
+    width: calc(100% + 3px);
+    z-index: -1;
+    position: absolute;
+    background-image: $brand-gradient;
+  }
+}
+
+.gradient-background-element{
+  color: $black;
+  background-image: $brand-gradient;
+  font-weight: 600;
+}

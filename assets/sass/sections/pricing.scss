@@ -1,7 +1,11 @@
 #pricing{
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+
   .sm-container{
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
 
   .planName{
@@ -15,6 +19,34 @@
       padding: 32px;
       border-radius: 24px;
       width: 33.3%;
+      position: relative;
+      height: 450px;
+    
+      &:nth-child(3){
+        .floatingElement{
+          bottom: 10px;
+        }
+      }
+    }
+
+    .col.linear-gradient-border{
+      height: 500px;
+      padding: 52px 32px;
+
+      .floatingElement{
+        top: -2px;
+        left: -2px;
+        padding: 12px 32px;
+        font-size: 1.4rem;
+        border-radius: 24px 0 24px 0px;
+      }
+
+
+      &::before{
+        top: -1.5px;
+        left: -1.5px;
+        border-radius: 24px;
+      }
     }
 
     .mainParagraph{
@@ -25,6 +57,10 @@
       font-size: 4.0rem;
       font-weight: 600;
       margin-bottom: 16px;
+
+      small{
+        font-size: 1.6rem;
+      }
     }
 
     .secondaryBtn{
@@ -33,6 +69,14 @@
 
     .hr{
       margin: 32px 0;
+    }
+  }
+
+  .flex.imgBox{
+    span{
+      &:last-of-type{
+        padding-top: 4px;
+      }
     }
   }
 }

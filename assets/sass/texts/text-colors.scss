@@ -1,0 +1,34 @@
+.textColorPrimary{
+  color: $text-color-primary;
+}
+
+.linkTextColorPrimary{
+  background: $brand-gradient;
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: $text-color-primary; 
+  transition-duration: 0.5s;
+
+  &:hover{
+    color: transparent;
+  }
+}
+
+.textColorSecondary{
+  color: $text-color-secondary;
+}
+
+a.textColorSecondary{
+  background: $brand-gradient;
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  transition-duration: 0.5s;
+
+  &:hover{
+    color: transparent;
+  }
+}
+
+.textColorTertiary{
+  color: $brand-color-primary;
+}

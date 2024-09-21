@@ -5,8 +5,7 @@
 @import './utils/alignments.scss';
 
 
-@import './texts/text-color-primary.scss';
-@import './texts/text-color-secondary.scss';
+@import './texts/text-colors.scss';
 @import './texts/text-sizes.scss';
 
 
@@ -25,3 +24,4 @@
 @import './components/grid.scss';
 @import './components/linear-gradient-horizontal-rulers.scss';
 @import './components/gradient-elements.scss';
+@import './components/footer.scss';

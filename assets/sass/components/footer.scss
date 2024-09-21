@@ -1,0 +1,12 @@
+footer{
+  padding: 0 32px 32px;
+
+  .footerInner{
+    .col{
+      flex-basis: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}

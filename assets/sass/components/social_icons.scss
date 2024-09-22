@@ -1,0 +1,14 @@
+.socialIcons{
+  svg, path{
+    transition: 0.5s;
+  }
+
+  a.textColorSecondary{
+
+    &:hover{
+      svg, path{
+        fill: $brand-color-primary;
+      }
+    }
+  }
+}

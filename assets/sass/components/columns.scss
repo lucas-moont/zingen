@@ -1,3 +1,7 @@
 .halfSizeCol{
   width: 50%;
+
+  @include mobile{
+    width: 100%;
+  }
 }

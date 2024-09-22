@@ -1,0 +1,5 @@
+.hideOnMobile{
+  @include mobile{
+    display: none;
+  }
+}

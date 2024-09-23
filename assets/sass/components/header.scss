@@ -6,6 +6,10 @@ header{
   justify-content: center;
   z-index: 100;
 
+  @include mobile{
+    padding: 16px;
+  }
+
   ul{
     display: flex;
     gap: 32px;

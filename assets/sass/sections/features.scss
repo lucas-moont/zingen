@@ -1,44 +1,77 @@
-#features{
+#features {
   padding: 128px 32px 64px;
 
-  h2{
-    font-size: 3.2rem;
-    margin: 16px 0;
+  @include mobile {
+    padding: 64px 16px 64px;
   }
 
-  .grid{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "area1 area2 area2 area3"
-    "area4 area4 area5 area5";
+  h2 {
+    font-size: 3.2rem;
+    margin: 16px 0;
 
-    .col{
+    @include mobile{
+      font-size: 2rem;
+      margin: 8px 0 8px;
+    }
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "area1 area2 area2 area3"
+      "area4 area4 area5 area5";
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5";
+    }
+
+    .col {
       background-color: $surface-color;
       padding: 32px;
       border-radius: 2.4rem;
       border: 1px solid $stroke-color;
+
+      @include mobile {
+        width: 100%;
+      }
     }
 
-    .area2{
-      background-image: url('../images/experiencia_gamificada.png');
+    .area2 {
+      background-image: url("../images/experiencia_gamificada.png");
       background-position: 100% 0px;
       background-repeat: no-repeat;
       background-size: 50%;
     }
 
-    .area4{
-      background-image: url('../images/comunidade.png');
+    .area4 {
+      background-image: url("../images/comunidade.png");
       background-position: 0% 0%;
       background-repeat: no-repeat;
       background-size: 55%;
       padding-bottom: 84px;
     }
 
-    .area5{
-      background-image: url('../images/real_time.png');
+    .area5 {
+      background-image: url("../images/real_time.png");
       background-position: 100% 100%;
       background-repeat: no-repeat;
       background-size: 50%;
       padding-bottom: 84px;
+    }
+
+    .area2,
+    .area4,
+    .area5 {
+      @include mobile {
+        background-size: 0%;
+        padding-bottom: 32px;
+      }
     }
   }
 }

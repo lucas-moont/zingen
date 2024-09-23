@@ -1,18 +1,38 @@
 footer {
   padding: 0 32px 32px;
 
+  @include mobile{
+    padding: 0 16px 64px;
+
+    .gap-g{
+      gap: 32px;
+    }
+  }
+
   .footerInner {
     .col {
       flex-basis: 20%;
+
+      @include mobile{
+        flex-basis: 100%;
+      }
       ul {
         display: flex;
         flex-direction: column;
         gap: 16px;
+
+        @include mobile{
+          gap: 8px;
+        }
       }
     }
   }
 
   .footerBottom {
     padding-top: 80px;
+
+    @include mobile{
+      padding-top: 32px;
+    }
   }
 }

@@ -2,7 +2,7 @@
   padding: 164px 32px;
 
   @include mobile{
-    padding: 128px 16px;
+    padding: 128px 16px 80px;
   }
 
   h2{
@@ -32,7 +32,7 @@
     position: relative;
 
     @include mobile{
-      padding: 48px 48px 280px 48px;
+      padding: 48px 48px 260px 48px;
     }
 
     .storeImg{
@@ -47,8 +47,8 @@
       width: 466px;
 
       @include mobile{
-        width: 236px;
-        right: -48px;
+        width: 226px;
+        right: -32px;
       }
     }
   }

@@ -1,11 +1,19 @@
 #pricing{
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
+  padding-top: 64px 32px 0;
+
+  @include mobile{
+    padding: 64px 16px 0;
+  }
 
   .sm-container{
     text-align: center;
     margin-bottom: 64px;
+
+    @include mobile{
+      margin-bottom: 32px;
+    }
   }
 
   .planName{
@@ -21,10 +29,20 @@
       width: 33.3%;
       position: relative;
       height: 450px;
+
+      @include mobile{
+        width: 100%;
+        height: auto;
+        padding: 24px;
+      }
     
       &:nth-child(3){
         .floatingElement{
           bottom: 10px;
+        }
+
+        @include mobile{
+          padding-bottom: 48px;
         }
       }
     }
@@ -32,6 +50,10 @@
     .col.linear-gradient-border{
       height: 500px;
       padding: 52px 32px;
+
+      @include mobile{
+        padding: 52px 24px 24px;
+      }
 
       .floatingElement{
         top: -2px;
@@ -57,6 +79,10 @@
       font-size: 4.0rem;
       font-weight: 600;
       margin-bottom: 16px;
+
+      @include mobile{
+        font-size: 3.2rem;
+      }
 
       small{
         font-size: 1.6rem;

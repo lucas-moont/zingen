@@ -1,13 +1,28 @@
 #download{
   padding: 164px 32px;
 
+  @include mobile{
+    padding: 128px 16px;
+  }
+
   h2{
     font-size: 4.8rem;
     margin-bottom: 0px;
+
+    @include mobile{
+      font-size: 2.6rem;
+      margin: 8px 0;
+    }
   }
 
   p{
     margin-bottom: 16px;
+  }
+
+  p.preTitle{
+    @include mobile{
+      margin-bottom: 0;
+    }
   }
 
   .downloadSectionInner{
@@ -16,12 +31,25 @@
     border-radius: 2.4rem;
     position: relative;
 
+    @include mobile{
+      padding: 48px 48px 280px 48px;
+    }
+
+    .storeImg{
+      width: 178px;
+    }
+
     .floatingImg{
       position: absolute;
       width: 50%;
       right: -32px;
       bottom: 0px;
       width: 466px;
+
+      @include mobile{
+        width: 236px;
+        right: -48px;
+      }
     }
   }
 }
